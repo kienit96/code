@@ -1,0 +1,49 @@
+/* INTRO */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+@font-face {
+    font-family: 'UTMHelvetIns'; 
+    src: url('font/UTMHelvetIns/UTMHelvetIns.eot');
+    src: url('font/UTMHelvetIns/UTMHelvetIns.eot') format('embedded-opentype'),
+    url('font/UTMHelvetIns/UTMHelvetIns.woff2') format('woff2'),
+    url('font/UTMHelvetIns/UTMHelvetIns.woff') format('woff'),
+    url('font/UTMHelvetIns/UTMHelvetIns.ttf') format('truetype'),
+    url('font/UTMHelvetIns/UTMHelvetIns.svg#UTMHelvetIns') format('svg');
+}
+*{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;outline: none;margin: 0;}
+img{max-width: 100%; height: auto;}
+#intro{width: 100%;font-family: Roboto,  sans-serif;position: relative;}
+.box_intro{width: 1000px;height: 100vh;max-width: 100%;text-align: center;margin:  0 auto;position: relative;}
+.box_intro .thongtin{display: inline-block;line-height: 40px;margin: 40px 0 0 0;}
+.box_intro .thongtin h1{font-family: UTMHelvetIns;font-size: 35px;color: #fff200;text-transform: uppercase;font-weight: 100;}
+.box_intro .thongtin p{font-size: 15px;color: #ffffff;font-weight: 400;display: flex;flex-wrap: wrap;align-items: center;justify-content: space-between;}
+.box_intro .thongtin p:before,.box_intro .thongtin p:after{position: relative;content: '';flex: auto;background: url(../images/line.png) no-repeat center;height: 1px;background-size:  100%;}
+.box_intro .thongtin p:before{margin-right: 10px;}
+.box_intro .thongtin p:after{margin-left: 10px;}
+.body_intro{display: block;position: absolute;margin: 0 auto;top: 50%;transform: translateY(-50%);width: 100%;}
+.box_intro .logo{margin: 0 0 30px 0;}
+.slick_danhmuc{display: none;margin: 0;}
+.slick_danhmuc .slick-slide{margin: 0 30px;}
+.danhmuc{display: flex !important;flex-wrap: wrap;background: #ffffff;padding: 15px 40px;border-radius: 50px;align-items: center;justify-content: space-between;}
+.danhmuc h3{width: calc(100% - 80px);text-align: left;}
+.danhmuc h3 a{font-size: 25px;color: #54a200;font-weight: 900;text-transform: uppercase;text-decoration: none;}
+.danhmuc:hover{background: #fff200;}
+.coppy{font-size: 13px;font-weight: 400;color: #ffffff;text-align: center;background: url(../images/line_c.png) no-repeat top center;padding: 20px 0;position: fixed;bottom: 0;left: 0;width: 100%;}
+.coppy span{text-transform: uppercase;}
+.button{position: fixed;right: 100px;top: 50px;}
+.button a{margin: 0 5px;display: inline-block;cursor: pointer;}
+/* new fix */
+.box_contain{position: absolute;width:  100%;height: 100%;background: #00000080;top: 0;left: 0;z-index: 99;display:  none;cursor: url(../images/close.png),pointer;}
+.new_fix{z-index: 9999;width: 300px;position: fixed;height: 100%;right: -100%;top: 0;background: #ffffff;padding: 5% 30px;cursor:  default;transition: 0.5s all;}
+.menu{list-style: none;padding: 0;}
+.menu li{padding: 10px 0;}
+.menu li a{font-size: 16px;color: #000000;text-decoration: unset;font-weight: 400;text-transform: capitalize;}
+.menu li:hover a{color: #54a200;}
+@media(max-width: 1000px){
+    .margin_auto{width: 100%;}
+    .box_intro .thongtin p:before,.box_intro .thongtin p:after{display: none;}
+    .body_intro{position: relative;transform: unset;top: 0;}
+    .coppy{position: relative;margin-top: 20px;line-height: 25px;}
+    .box_intro{height: auto;}
+    .button{display: none;}
+    .box_intro .thongtin{padding: 0 20px;}
+}

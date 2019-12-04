@@ -1,0 +1,110 @@
+#checkout{width: 100%;display: flex;justify-content: space-between;flex-wrap: wrap;align-items: flex-start;}
+.title_dh{padding: 5px 10px;border-top: 2px solid #ffffff;border-bottom: 1px solid #dddddd;background: #f7f7f7;justify-content: space-between;display: flex;filter: grayscale(100%);-webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);-ms-filter: grayscale(100%);-o-filter: grayscale(100%);}
+.thongtin_nhanhang{width: calc(100% - 400px);}
+.title_dh h4{
+    
+    font-size: 15px;
+    font-weight: 700;
+    color: #2b2b2b;
+    display: inline-block;
+}
+.title_dh a{
+    display: inline-block;
+    
+    font-size: 13px;
+    color: #006ec3;
+    padding: 5px 0;
+    font-weight: 500;
+}
+.thongtin_nhanhang .thongtin,.hinhthuc_tt{width: 100%;display: inline-block;border: 1px solid #dddddd;margin: 0 0 20px 0;position: relative;}
+.hinhthuc_tt{margin: 0;}
+.thongtin_nhanhang .thongtin .title_dh h4{
+    background: url(../images/icon_steploin_2_active.png) no-repeat left center;
+    padding: 5px 0 5px 30px;
+    font-weight: 700;
+}
+.thongtin_nhanhang .thongtin,.hinhthuc_tt ul{width: 100%;list-style: none;padding: 0;}
+.hinhthuc_tt ul li .radio-input{display: inline-block; margin: 0 10px 0 0 ;}
+.hinhthuc_tt ul li label{font-weight: 700;}
+.hinhthuc_tt ul li .noidung{padding: 10px;}
+
+.khung_dh{width: 100%;display: inline-block;padding: 10px 10px;background: #ffffff;}
+.khung_dh.ttnh{padding: 20px 100px;background: #ffffff;}
+.khung_dh .input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.khung_dh .input span{font-size: 14px;color: #000000;font-weight: 700;width: 30%;padding: 15px 0 0 0;}
+.khung_dh .input input, .khung_dh .input textarea,.khung_dh .input select{
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #eeeeee;
+    
+    font-size: 13px;
+    font-weight: 500;
+}
+.khung_dh .input input:focus,.khung_dh .input textarea:focus{border-color: #dd890b;}
+.hinhthuc_tt .title_dh h4{
+    background: url(../images/icon_steploin_3_active.png) no-repeat left center;
+    padding: 5px 0 5px 30px;
+}
+.donhang{width: 380px;border: 1px solid #dddddd;}
+.donhang .title_dh h4{
+    background: url(../images/icon_01.png) no-repeat left center;
+    padding: 5px 0 5px 30px;
+}
+.giohang_dh{width: 100%;display: inline-block;padding: 0;}
+.giohang_dh li{
+    display: flex;
+    margin: 0 0 5px 0;
+}
+.giohang_dh li.tongtien{font-size: 14px;color: #333333;padding: 10px 0;margin: 0;text-align: right;width: 100%;display: inline-block;border-top: 1px solid #dddddd;}
+.giohang_dh .img{
+    width: 100px;
+}
+.giohang_dh .img img{display: block;}
+.giohang_dh .noidung{
+    width: calc(100% - 100px);
+    padding: 0 0 0 10px;
+}
+.giohang_dh .noidung h3{
+    line-height: 1;
+}
+.giohang_dh .noidung h3 a{font-size: 13px;color: #000000;font-weight: 500;}
+.giohang_dh .noidung p{
+    
+    font-size: 13px;
+}
+.giohang_dh .noidung span{
+    color: #ff0000;
+    font-weight: 700;
+}
+.nut_dathang{
+        background: #dd890b;
+        border-radius: 3px;
+        color: #ffffff;
+        display: inline-block;
+        padding: 9px 0;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+}
+.nut_dathang:hover{background: #e25700;color: #ffffff;}
+.tongtien{width: 100%;line-height: 40px;text-align: right;}
+.tongtien p{ font-size: 14px; color: #000000;}
+.tongtien p span{color: #ff0000;font-weight: 700;width: 100px;display: inline-block;}
+.tongtien .total{border-top: 1px solid #dddddd;}
+#loading{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);z-index: 99;width: 70px;height: 70px;display: none;}   
+@media(max-width: 980px){
+    .thongtin_nhanhang,.donhang{width: 100%;}
+}
+@media(max-width: 700px){
+    .khung_dh.ttnh{padding:10px;}
+}

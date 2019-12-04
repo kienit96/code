@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Muli:200,300,400,500,600,700,800,900&display=swap');
+@font-face {
+    font-family: 'UTMHelvetIns'; 
+    src: url('font/UTMHelvetIns/UTMHelvetIns.eot');
+    src: url('font/UTMHelvetIns/UTMHelvetIns.eot') format('embedded-opentype'),
+    url('font/UTMHelvetIns/UTMHelvetIns.woff2') format('woff2'),
+    url('font/UTMHelvetIns/UTMHelvetIns.woff') format('woff'),
+    url('font/UTMHelvetIns/UTMHelvetIns.ttf') format('truetype'),
+    url('font/UTMHelvetIns/UTMHelvetIns.svg#UTMHelvetIns') format('svg');
+}
+@font-face {
+    font-family: 'SFUSchadowBTBlackCondensed'; 
+    src: url('font/SFUSchadowBTBlackCondensed/SFUSchadowBTBlackCondensed.eot');
+    src: url('font/SFUSchadowBTBlackCondensed/SFUSchadowBTBlackCondensed.eot') format('embedded-opentype'),
+    /*url('font/SFUSchadowBTBlackCondensed/SFUSchadowBTBlackCondensed.woff2') format('woff2'),
+    url('font/SFUSchadowBTBlackCondensed/SFUSchadowBTBlackCondensed.woff') format('woff'),*/
+    url('font/SFUSchadowBTBlackCondensed/SFUSchadowBTBlackCondensed.ttf') format('truetype'),
+    url('font/SFUSchadowBTBlackCondensed/SFUSchadowBTBlackCondensed.svg#SFUSchadowBTBlackCondensed') format('svg');
+}

@@ -1,0 +1,146 @@
+h4.title_cart{font-size: 18px;margin: 10px 0;font-weight: 700;color: #ffffff;}
+.icon_thanh {text-align: right;}
+.g_muatiep{
+    
+    font-size: 15px;
+    color: #ffffff;
+    background: #0060aa;
+    border: none;
+    padding: 8px 40px;
+    display: inline-block;
+    font-weight: 100;
+    line-height: 1;
+    text-transform: capitalize;
+}
+.thanhtoan_nt{
+	width:155px;
+	float:right;
+	height:33px;
+	border:0;
+	background: #06779C;
+	color:#000;
+	text-shadow:-1px 1px #fff , 1px -1px #fff , -1px -1px #fff ,1px 1px #fff ;
+	font-weight:bold;
+	text-transform:capitalize;
+	cursor:pointer;
+}
+.g_muatiep:hover{
+	background: #037c7d;
+}
+.menu_giohang{
+	background: #eeeeee;
+	line-height:30px;
+	color: #000000;
+}
+.capnhat_full{color: #FA0000;font-weight: 600;}
+#frm_order{width: 100%;display: flex;flex-wrap: wrap;justify-content: space-between;align-items: end;}
+
+
+.giohang_tk tr:first-child td{border: none;font-weight: 600;text-transform: uppercase;font-size: 13px;}
+.giohang_tk td.center{text-align: center;}
+.giohang_tk{width: calc(100% - 260px);}
+.giohang_tk table{background: #dddddd; border: none;}
+.giohang_tk td{
+	
+padding: 5px;
+	
+font-size: 14px;
+}
+.tonggia td{
+	background: #367c5a;
+	height:30px;
+	line-height:30px;
+	font-size: 15px;
+	text-align: right;
+	color: #ffffff;
+	padding: 5px 10px 5px 10px;
+	text-transform: uppercase;
+}
+.tonggia td b{color: #fff000;font-weight: 100;font-size: 18px;}
+.ahaa td{
+}
+.thanhtoan tr{
+	width:100%;
+	float:left;
+	padding:10px 0px 0px 10px;
+	clear:both;
+}
+.thanhtoan td{
+	float:left;
+}
+.thanhtoan input{
+	width:200px;
+	padding: 5px;	
+}
+.phuongthuc input{
+	width:auto;
+	height:auto;
+}
+.thanhtoan select{
+	padding:5px;
+}
+.thanhtoan textarea{
+	padding:10px;
+	width: 100%;
+}
+.titleinformation{ font-weight:bold; white-space:nowrap; height:30px; line-height:40px; text-transform:uppercase; color:rgba(0,102,153,1); width:100%; border-bottom:1px solid rgba(0,102,153,0.2); padding-bottom:5px;} 
+.titleinformation img{ float:left;}
+.phuongthuc{}
+.phuongthuc p{font-weight:bold;float:left;width:100%;font-size:12px;margin-bottom:10px;color:rgba(0,102,153,1);text-transform:uppercase;}
+.phuongthuc input{ margin-right:10px; margin-left:0px; float:left; margin-top:3px;  cursor:pointer;}
+.phuongthuc img{ margin-right:20px;}
+.form_giohang{background: #ffffff;width: 100%;}
+.form_giohang .tt_cart{text-align: left;position: relative;}
+.form_giohang .tt_cart i{font-size: 13px;color: #ffffff;position: absolute;top: 10px;left: 10px;width: 25px;height: 25px;line-height: 25px;padding: 0 7px;border-radius: 50%;background: #dd890b;display: block;font-weight: 100;}
+.form_giohang .img{width: 100px;float: left;margin-right: 10px;}
+.form_giohang .tt_cart h3{text-align: left;color: #333;font-size: 15px;font-weight: 700;}
+.form_giohang .tt_cart span{color: #e10000;display: block;font-size: 13px;font-weight: 600;}
+.form_giohang .tt_cart:hover{opacity: 0.8;}
+.cl_input{ margin: 20px 0px 0px 0px; }
+
+.cl_input label{width: 20%;float: left;font-weight: 100;}
+.cl_input label img{ width: 16px; margin-right: 5px; }
+.cl_input input{width: 80%;float: left;padding: 2px;}
+.cl_area label{ width: 100%; float: left; margin: 15px 0px 10px 0px;font-weight: 100; }
+.cl_area label img{ width: 20px; margin-right: 5px; }
+.cl_area{padding-right: 0;}
+.cl_area textarea{width: 100%;height: 79px;padding: 5px;}
+.form_giohang input{width: 50px;text-align: center;padding: 8px 0px;margin: 0 auto;display: -webkit-box;border-radius: 2px;border: 1px solid #dddddd;}
+.giohang_form{margin: 0 -20px;}
+.giohang_form .cl_input{width: 50%;float: left;padding: 0 20px;}
+.giohang_form .cl_input input{padding: 5px;} 
+.cart_actions{width: 100%;display: flex;justify-content: space-between;padding: 8px 10px;background: #eeeeee;}
+.cart_actions a:first-child{
+	font-weight: 400;
+	border: none;
+	background: none;
+	color: #000000;
+	font-size: 13px;
+	}
+a.dathang{
+    background: #dd890b;
+    border-radius: 3px;
+    color: #ffffff;
+    display: inline-block;
+    padding: 9px 40px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+a.dathang:hover{background: #e25700;color: #ffffff;}
+.cart-summary{width: 250px;}
+.cart-summary h4{font-size: 14px;color: #000000;font-weight: 600;text-align: center;background: #eeeeee;padding: 10px 0;text-transform: uppercase;}
+.summary{width: 100%;padding: 10px;border: 1px solid #eee;border-top: none;background: #ffffff;text-align: center;}
+.summary p{font-size: 14px;color: #333333;line-height: 30px;display: flex;justify-content: space-between;font-weight: 500;}
+.summary > a.dathang{margin-top: 10px;}
+@media (max-width: 768px) {
+	.res_cart{ display: none; }
+	.form_giohang .img{width: 90px;margin: 0 5px 0 0;}
+	.giohang_tk,.cart-summary{width: 100% !important;margin: 0 0 10px 0;}
+	.giohang_tk td{/* padding: 0; */}
+}
+@media (max-width: 500px) {
+	.cl_input label{ width: 100%; float: left; font-weight: 100; }
+	.cl_input input{ width: 100%; float: left; padding: 2px; }
+	..menu_giohang td{ font-size: 11px; text-transform: capitalize;  }
+}

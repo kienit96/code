@@ -1,0 +1,113 @@
+# Helicon Ape version 3.1.0.115
+
+RewriteEngine On
+RewriteRule sitemap.xml$ sitemap.php
+DirectoryIndex index.php
+ErrorDocument 404 /404.php 
+RewriteRule ^admin$ admin/ [L]
+RewriteRule ^admin/$ admin/ [L]
+
+# 1 year
+<FilesMatch ".(ico|pdf|flv)$">
+Header set Cache-Control "max-age=29030400, public"
+</FilesMatch>
+# 1 WEEK
+<FilesMatch ".(jpg|jpeg|png|gif|swf)$">
+Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+
+# 2 DAYS
+<FilesMatch ".(xml|txt|css|js|woff)$">
+Header set Cache-Control "max-age=604800, proxy-revalidate"
+</FilesMatch>
+# 2 DAYS
+<FilesMatch ".(html|htm|php)$">
+Header set Cache-Control "max-age=604800, private, proxy-revalidate"
+</FilesMatch>
+
+#RewriteRule ^([a-zA-Z0-9_-]+)/$  http://%{HTTP_HOST}/$1 [L,R=301]
+
+RewriteRule ^thumb/([0-9]+)x([0-9]+)/([0-9]+)/(.*)$ timthumb.php?w=$1&h=$2&zc=$3&q=80&src=/nhomkinh_doanvankhen_1714919w/$4  [L]
+RewriteRule ^thumb1/([0-9]+)x([0-9]+)/([0-9]+)/(.*)$ timthumb1.php?w=$1&h=$2&zc=$3&src=/nhomkinh_doanvankhen_1714919w/$4&q=80&wm=1&wl=3&wmr=20  [L]
+
+RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?com=$1 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/$ index.php?com=$1 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)&page=([0-9]+)$	index.php?com=$1&page=$2 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)&keywords=(.*)$	index.php?com=$1&keywords=$2 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)&lang=(.*)$	index.php?com=$1&lang=$2 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)&pid=(.*)&command=(.*)$	index.php?com=$1&pid=$2&command=$3 [L]
+
+<Ifmodule mod_php4.c>
+php_value upload_max_filesize 200M
+php_value max_execution_time  30
+php_value max_input_time  60
+php_value memory_limit  32M
+php_value post_max_size  200M
+php_flag register_globals  off
+php_flag display_errors  off
+php_flag file_uploads  on
+php_flag log_errors  off
+php_flag output_buffering  off
+php_flag register_argc_argv  on
+php_flag magic_quotes_gpc   off
+php_flag magic_quotes_runtime  off
+php_flag magic_quotes_sybase  off
+php_flag mysql.allow_persistent  off
+php_flag register_long_arrays  on
+php_flag allow_url_fopen  on
+php_flag cgi.force_redirect  on
+php_flag enable_dl  on
+</Ifmodule>
+
+<Ifmodule mod_php5.c>
+php_value short_open_tag 1
+php_value upload_max_filesize 200M
+php_value max_execution_time  30
+php_value max_input_time  60
+php_value memory_limit  32M
+php_value post_max_size  200M
+php_flag register_globals  off
+php_flag display_errors  off
+php_flag file_uploads  on
+php_flag log_errors  off
+php_flag output_buffering  off
+php_flag register_argc_argv  on
+php_flag magic_quotes_gpc   off
+php_flag magic_quotes_runtime  off
+php_flag magic_quotes_sybase  off
+php_flag mysql.allow_persistent  off
+php_flag register_long_arrays  on
+php_flag allow_url_fopen  on
+php_flag cgi.force_redirect  on
+php_flag enable_dl  on
+</Ifmodule>
+
+
+<Ifmodule mod_php4.c>
+   php_flag display_errors  off
+   php_flag log_errors  off
+</Ifmodule>
+
+<Ifmodule mod_php5.c>
+   php_value short_open_tag 1
+   php_flag display_errors  off
+   php_flag log_errors  off
+   php_flag enable_dl  on
+</Ifmodule>
+
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 1 year"
+ExpiresByType image/jpeg "access 1 year"
+ExpiresByType image/gif "access 1 year"
+ExpiresByType image/png "access 1 year"
+ExpiresByType text/css "access 1 month"
+ExpiresByType text/html "access 1 month"
+ExpiresByType application/pdf "access 1 month"
+ExpiresByType text/x-javascript "access 1 month"
+ExpiresByType application/x-shockwave-flash "access 1 month"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresDefault "access 1 month"
+</IfModule>
+## EXPIRES CACHING ##

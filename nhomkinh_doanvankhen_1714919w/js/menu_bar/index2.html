@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Investigate Law HTML5 Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<base href="http://templates.stillidea.net/investigate/">
+
+
+<!-- Styles -->
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+
+
+</head>
+<body>
+
+<header class="stick">
+	<div class="menubar">
+		<div class="container">
+			<div class="logo"><a href="#" title=""><img src="images/logo.png" alt="" /></a></div>
+			<nav>
+				<ul>
+					<li><a data-letter="Home" href="#" title="">Home</a>
+						<ul>
+							<li><a href="index.html" title=""><i class="fa fa-magnet"></i> Home Style 1</a></li>
+							<li><a href="index2.html" title=""><i class="fa fa-magnet"></i> Home Style 2</a></li>
+							<li><a href="index3.html" title=""><i class="fa fa-magnet"></i> Home Style 3</a></li>
+							<li><a href="index4.html" title=""><i class="fa fa-magnet"></i> Home Style 4</a></li>
+							<li><a href="index-boxed.html" title=""><i class="fa fa-magnet"></i> Boxed Version</a></li>
+							<li><a href="index.html" title=""><i class="fa fa-magnet"></i> Sticky Header</a></li>
+							<li><a href="index2.html" title=""><i class="fa fa-magnet"></i> Video Slider</a></li>
+						</ul>
+					</li>
+					<li><a data-letter="Gallery" href="#" title="">Gallery</a>
+						<ul>
+							<li><a href="gallery.html" title=""><i class="fa fa-magnet"></i> Gallery Style 1</a></li>
+							<li><a href="gallery2.html" title=""><i class="fa fa-magnet"></i> Gallery Style 2</a></li>
+							<li><a href="gallery3.html" title=""><i class="fa fa-magnet"></i> Gallery Style 3</a></li>
+							<li><a href="gallery4.html" title=""><i class="fa fa-magnet"></i> Gallery Style 4</a></li>
+						</ul>
+					</li>
+					<li><a data-letter="Pages" href="#" title="">Pages</a>
+						<ul>
+							<li><a href="about.html" title=""><i class="fa fa-magnet"></i> About Page</a></li>
+							<li><a href="stories.html" title=""><i class="fa fa-magnet"></i> Stories</a></li>
+							<li><a href="case-detail.html" title=""><i class="fa fa-magnet"></i> Case Detail</a></li>
+							<li><a href="practice-areas.html" title=""><i class="fa fa-magnet"></i> Practice Areas</a></li>
+							<li><a href="team.html" title=""><i class="fa fa-magnet"></i> Team</a></li>
+							<li><a href="team-detail.html" title=""><i class="fa fa-magnet"></i> Team Detail</a></li>
+						</ul>
+					</li>
+					<li><a data-letter="Blog" href="#" title="">Blog</a>
+						<ul>
+							<li><a href="blog.html" title=""><i class="fa fa-magnet"></i> Blog Page</a></li>
+							<li><a href="blog-detail.html" title=""><i class="fa fa-magnet"></i> Blog Detail</a></li>
+							<li><a href="blog-detail-sidebar.html" title=""><i class="fa fa-magnet"></i> Blog Detail With Sidebar</a></li>
+						</ul>
+					</li>
+					<li><a data-letter="Contact Us" href="contact.html" title=""> Contact Us</a></li>
+				</ul>
+			</nav><!-- Navigation -->
+			<div class="registration-btns">
+				<a class="open-signin" href="#" title=""><i class="fa fa-lock"></i> SIGN IN</a>
+				<a class="open-signup" href="#" title=""><i class="fa fa-graduation-cap"></i> REGISTER</a>
+			</div>
+		</div>
+	</div><!-- Menu Bar -->
+
+	
+</header><!-- Header -->
+
+
+
+
+
+<script type="text/javascript" src="js/jquery2.1.4.js"></script>	
+
+<!-- REVOLUTION JS FILES -->
+<script type="text/javascript" src="js/revolution/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="js/revolution/jquery.themepunch.revolution.min.js"></script>
+
+
+
+<!-- REVOLUTION JS INITIALIZATION -->
+
+<script src="js/enscroll-0.5.2.min.js"></script> <!-- Custom Scroll bar -->
+<script type="text/javascript" src="js/script.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	/* ============ Customer Reviews ================*/
+	$('.reviews-carousel').owlCarousel({
+		autoplay:true,
+		autoplayTimeout:30000,
+		smartSpeed:2000,
+		loop:true,
+		dots:false,
+		nav:true,
+		margin:10,
+		singleItem:true,
+		items:1,
+		animateIn:"fadeIn",
+		animateOut:"fadeOut"
+	});
+
+	/* ============ Sponsors Carousel ================*/
+	$('.sponsors-carousel').owlCarousel({
+		autoplay:true,
+		autoplayTimeout:30000,
+		smartSpeed:2000,
+		loop:true,
+		dots:false,
+		nav:false,
+		margin:10,
+		items:6,
+		responsive:{
+			1200:{items:6},
+			980:{items:4},
+			768:{items:3},
+			480:{items:2},
+			0:{items:2}
+		}
+	});
+
+	/* ============ Big Blog Carousel ================*/
+	$('.big-blog-carousel').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		asNavFor: '.big-blog-thumb'
+	});
+	$('.big-blog-thumb').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		asNavFor: '.big-blog-carousel',
+		dots: false,
+		arrows:false,
+		centerMode:true,
+		focusOnSelect: true,
+		responsive: [
+			{
+			  breakpoint: 780,
+			  settings: {
+			    slidesToShow:2,
+			    slidesToScroll:1
+			  }
+			},
+			{		
+			  breakpoint: 480,
+			  settings: {
+			    slidesToShow:1,
+			    slidesToScroll:1
+			  }
+			}		
+		]
+	});	
+});
+</script>
+
+</body>

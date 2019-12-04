@@ -1,0 +1,58 @@
+.ddsmoothmenu-v{ width: 100%; float: left;}
+.ddsmoothmenu-v ul{
+width:100%;
+float:left;
+
+}
+ .ddsmoothmenu-v h2{ width: 100%;}
+.ddsmoothmenu-v ul li{
+position: relative;
+width:100%;
+float:left;
+background:url(../images/left_menu.png) repeat-x bottom;
+}
+
+/* Top level menu links style */
+.ddsmoothmenu-v ul li a{
+	width:100%;
+	float:left;
+	padding:7px 5px 0px 30px;
+	text-decoration:none;
+	font-size:14px;
+	height: 35px;
+	text-transform: uppercase;
+	background:url(../images/muiten.png) no-repeat 15px 12px;
+	color:#4a4a4a;
+	
+}
+.ddsmoothmenu-v ul li a img{ float: left; margin: 0px 10px 0px 0px;}
+.ddsmoothmenu-v ul li:last-child{ border-bottom:none;}
+
+.ddsmoothmenu-v ul li a:link, .ddsmoothmenu-v ul li a:visited, .ddsmoothmenu-v ul li a:active{
+	color:#4a4a4a;
+}
+
+
+.ddsmoothmenu-v ul li a.selected,.ddsmoothmenu-v ul li a:hover{
+	color:#FF0000;
+}
+
+/*Sub level menu items */
+.ddsmoothmenu-v ul li ul{
+position: absolute;
+width: 260px; /*Sub Menu Items width */
+top: 0;
+font-weight: normal;
+visibility: hidden;
+background:rgba(255,255,255,1);
+margin:0px;
+padding:0px;
+left: 100% !important;
+margin-left:1px;
+}
+
+ 
+/* Holly Hack for IE \*/
+* html .ddsmoothmenu-v ul li { float: left; height: 1%; }
+* html .ddsmoothmenu-v ul li a { height: 1%; }
+/* End */
